@@ -1,0 +1,25 @@
+{
+    "name": "davidepastore/lorempixel-twig-extension",
+    "description": "A Twig extension for the lorempixel service",
+    "keywords": ["twig","lorempixel","lorem","pixel", "img", "image", "random"],
+    "license": "MIT",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "LoremPixelTwigExtension\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\LoremPixelTwigExtension\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.3",
+        "twig/twig": "~1.10"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "scrutinizer/ocular": "~1.1"
+    }
+}

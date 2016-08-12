@@ -1,0 +1,20 @@
+--TEST--
+Calling "lorempixel" function with explicit parameters
+--TEMPLATE--
+{{ lorempixel(true) }}
+{{ lorempixel(false) }}
+{{ lorempixel(true, 500, 300) }}
+{{ lorempixel(true, 500, 300, 'cats') }}
+{{ lorempixel(true, 500, 300, 'cats', 2) }}
+{{ lorempixel(true, 500, 300, 'cats', null, 'Dummy Text') }}
+{{ lorempixel(true, 500, 300, 'cats', 2, 'Dummy Text') }}
+--DATA--
+return array();
+--EXPECT--
+http://lorempixel.com/g/400/200/
+http://lorempixel.com/400/200/
+http://lorempixel.com/g/500/300/
+http://lorempixel.com/g/500/300/cats/
+http://lorempixel.com/g/500/300/cats/2/
+http://lorempixel.com/g/500/300/cats/Dummy Text/
+http://lorempixel.com/g/500/300/cats/2/Dummy Text/
