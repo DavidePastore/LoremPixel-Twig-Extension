@@ -23,8 +23,23 @@ $twig->addExtension(new LoremPixelTwigExtension());
 
 In the templates, you then just call `<img src="{{ lorempixel() }}">`.
 
-You can use different parameters for this function:
+You can use different parameters for this function in this order:
 
+| Name | Type | Description | Default | Example |
+| --- | --- | --- | --- | --- |
+| gray | boolean | Is it a gray image? | `false` | `lorempixel(true)` |
+| width | int | The width of the image. | `400` | `lorempixel(true, 500)` |
+| height | int | The height of the image. | `200` | `lorempixel(true, 500, 300)` |
+| category | string | The category of the image. You can find all supported categories [here][link-lorempixel]. | `null` | `lorempixel(true, 500, 300, 'cats')` |
+| number | int | The number of the image from the given category. | `null` | `lorempixel(true, 500, 300, 'cats', 2)` |
+| text | string | The custom text to add to the image. | `null` | `lorempixel(true, 500, 300, 'cats', 2, 'Dummy Text')` |
+
+
+An example with all the parameters could be:
+
+```php
+<img src="{{ lorempixel(true, 500, 300, 'cats', 2, 'Dummy Text') }}">
+```
 
 ## Testing
 
