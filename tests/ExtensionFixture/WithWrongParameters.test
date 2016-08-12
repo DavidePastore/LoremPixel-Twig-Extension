@@ -1,0 +1,8 @@
+--TEST--
+Calling "lorempixel" function with explicit parameters
+--TEMPLATE--
+{{ lorempixel(true, 500, 300, null, 2) }}
+--DATA--
+return array();
+--EXPECT--
+http://lorempixel.com/g/500/300/

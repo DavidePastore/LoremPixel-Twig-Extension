@@ -59,7 +59,7 @@ class LoremPixelTwigExtension extends Twig_Extension
         if ($category) {
             $options[] = $category;
         }
-        if ($number) {
+        if ($category && $number) {
             $options[] = $number;
         }
         if ($text) {
