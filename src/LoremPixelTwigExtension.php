@@ -68,13 +68,13 @@ class LoremPixelTwigExtension extends Twig_Extension
         if ($height) {
             $options[] = $height;
         }
-        if ($category) {
+        if ($category !== null) {
             $options[] = $category;
         }
-        if ($category !== null && $number) {
+        if ($category !== null && $number !== null) {
             $options[] = $number;
         }
-        if ($text) {
+        if ($text !== null) {
             $options[] = $text;
         }
         $options[] = '';
