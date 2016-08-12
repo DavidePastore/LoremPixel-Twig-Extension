@@ -30,7 +30,7 @@ class LoremPixelTwigExtension extends Twig_Extension
     /**
      * Get the extension related functions.
      *
-     * @return array Returns the extension related functions.
+     * @return Twig_SimpleFunction[] Returns the extension related functions.
      */
     public function getFunctions()
     {
@@ -47,8 +47,8 @@ class LoremPixelTwigExtension extends Twig_Extension
      * Generate the lorempixel image url.
      *
      * @param bool|null   $gray     Is it a gray image?
-     * @param int|null    $width    The width of the image.
-     * @param int|null    $height   The height of the image.
+     * @param int         $width    The width of the image.
+     * @param int         $height   The height of the image.
      * @param string|null $category The category of the image.
      * @param int|null    $number   The number of the image from the given category.
      * @param string|null $text     The custom text to add to the image.
