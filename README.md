@@ -1,4 +1,4 @@
-# [LoremPixel[link-lorempixel] Twig Extension
+# [LoremPixel][link-lorempixel] Twig Extension
 
 
 [![Latest version][ico-version]][link-packagist]
