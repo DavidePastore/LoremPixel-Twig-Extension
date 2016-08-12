@@ -11,15 +11,27 @@ use Twig_SimpleFunction;
 class LoremPixelTwigExtension extends Twig_Extension
 {
     /**
+     * The host of the lorempixel service.
+     *
      * @var string|null
      */
     private $HOST = 'http://lorempixel.com/';
 
+    /**
+     * The name of the extension.
+     *
+     * @return string Returns the nmae of the extension.
+     */
     public function getName()
     {
         return 'lorempixel';
     }
 
+    /**
+     * Get the extension related functions.
+     *
+     * @return array Returns the extension related functions.
+     */
     public function getFunctions()
     {
         return [
