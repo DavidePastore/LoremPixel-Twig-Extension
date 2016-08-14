@@ -8,6 +8,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 
 [![Build Status][ico-phpeye]][link-phpeye]
+[![PSR2 Conformance][ico-styleci]][link-styleci]
 
 This library integrates [LoremPixel][link-lorempixel] service into [Twig](http://twig.sensiolabs.org/). You can use it to generate random image urls that you can use as placeholders in your application.
 
@@ -68,6 +69,7 @@ This library is released under the [MIT license](http://opensource.org/licenses/
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/davidepastore/LoremPixel-Twig-Extension.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/davidepastore/LoremPixel-Twig-Extension.svg?style=flat-square
 [ico-phpeye]: http://php-eye.com/badge/DavidePastore/LoremPixel-Twig-Extension/tested.svg?style=flat-square
+[ico-styleci]: https://styleci.io/repos/65571631/shield
 
 [link-lorempixel]: http://lorempixel.com/
 [link-packagist]: https://packagist.org/packages/davidepastore/LoremPixel-Twig-Extension
@@ -76,3 +78,4 @@ This library is released under the [MIT license](http://opensource.org/licenses/
 [link-code-quality]: https://scrutinizer-ci.com/g/DavidePastore/LoremPixel-Twig-Extension
 [link-downloads]: https://packagist.org/packages/davidepastore/LoremPixel-Twig-Extension
 [link-phpeye]: http://php-eye.com/package/DavidePastore/LoremPixel-Twig-Extension
+[link-styleci]: https://styleci.io/repos/65571631/
